@@ -74,3 +74,4 @@ mysite/static/admin/js/vendor/xregexp/xregexp.js
 mysite/static/admin/js/vendor/xregexp/xregexp.min.js
 mysite/blog/__pycache__/urls.cpython-36.pyc
 mysite/blog/__pycache__/views.cpython-36.pyc
+mysite/blog/__pycache__/forms.cpython-36.pyc

@@ -32,8 +32,9 @@ h1, h2, h3, h4 {
     float: right;
 }
 
-post-form textarea, .post-form input {
+.post-form textarea, .post-form input {
     width: 100%;
+    padding-left: 15px;
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
