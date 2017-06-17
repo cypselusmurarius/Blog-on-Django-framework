@@ -10,3 +10,4 @@ mysite/blog/migrations/__init__.py
 mysite/blog/__pycache__/models.cpython-36.pyc
 mysite/blog/__pycache__/admin.cpython-36.pyc
 mysite/blog/__pycache__/__init__.cpython-36.pyc
+mysite/mysite/__pycache__/wsgi.cpython-36.pyc
