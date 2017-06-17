@@ -7,6 +7,16 @@
     <title>Simple blog on Django framework</title>
 </head>
 <body>
+    <div class="">
+        <h1><a href="/">Django Blog</a></h1>
+    </div>
 
+    {% for post in posts %}
+        <div>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+            <p>published: {{ post.published_date }}</p>
+        </div>
+    {% endfor %}
 </body>
 </html>
