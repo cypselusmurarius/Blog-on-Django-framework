@@ -72,3 +72,5 @@ mysite/static/admin/js/vendor/jquery/jquery.min.js
 mysite/static/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt
 mysite/static/admin/js/vendor/xregexp/xregexp.js
 mysite/static/admin/js/vendor/xregexp/xregexp.min.js
+mysite/blog/__pycache__/urls.cpython-36.pyc
+mysite/blog/__pycache__/views.cpython-36.pyc

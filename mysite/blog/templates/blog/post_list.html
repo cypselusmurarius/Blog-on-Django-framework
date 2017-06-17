@@ -1,22 +1,42 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Connect Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Connect Static file -->
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+    <!-- Connect font -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
     <title>Simple blog on Django framework</title>
 </head>
 <body>
-    <div class="">
+    <div class="page-header">
         <h1><a href="/">Django Blog</a></h1>
     </div>
 
-    {% for post in posts %}
-        <div>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-            <p>published: {{ post.published_date }}</p>
-        </div>
-    {% endfor %}
+    <div class="content container">
+       <div class="row">
+           <div class="col-md-8">
+               {% for post in posts %}
+                   <div class="post">
+                       <h1><a href="">{{ post.title }}</a></h1>
+                       <p>{{ post.text|linebreaksbr }}</p>
+                       <div class="date">
+                           {{ post.published_date }}
+                       </div>
+                   </div>
+               {% endfor %}
+           </div>
+       </div>
+   </div>
 </body>
 </html>
